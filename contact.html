@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Thao Pham's Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to my little corner of the internet! I'm Thao Pham - a ambitious college student, a self-taught graphic designer and a wannabe full-stack marketer.">
+    <meta name="author" content="Thao Pham">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="Thao Pham's Portfolio" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="Contact - Thao Pham's Portfolio"/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Welcome to my little corner of the internet! I'm Thao Pham - a ambitious college student, a self-taught graphic designer and a wannabe full-stack marketer." /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- ANIMATION ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ANIMATE CSS - WOW JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+
+    <!-- PRE-LOADER -->
+    <div id="pre-loader">
+      <img src="img/loader-bean-eater.gif" alt="Loading..." />
+    </div>
+
+    <!-- LIGHT TRANSPARENT NAVBAR  -->
+    <div id="l-nav" class="l-nav">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo-light.png" alt="" width="60" height="60">
+          </a>
+          <!-- TOGGLER BUTTON -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <!-- NAVBAR -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="coming-soon.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- SOCIAL ICONS -->
+            <div class="d-flex">
+              <ul class="social-icons">
+                <a href="https://www.facebook.com/anonpham311/" target="_blank"><li class="social-icon"><i class="fa fa-facebook"></i></li></a>
+                <a href="https://github.com/anonpham311" target="_blank"><li class="social-icon"><i class="fa fa-github"></i></li></a>
+                <a href="https://www.linkedin.com/in/thao-pham-67611220a/" target="_blank"><li class="social-icon"><i class="fa fa-linkedin"></i></li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- WANT TO SAY HI -->
+    <div class="say-hi d-flex align-items-center container-fluid">
+        <div class="container">
+            <div class="row animated wow bounceInDown">
+              <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <h2><span class="white-hightlight">Want to say hi?</span></h2>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GET IN TOUCH -->
+    <div id="get-in-touch" class="get-in-touch">
+        <div class="container">
+            <div class="white-git">
+                <!-- STICKER 1 -->
+                <img src="img/sticker-1.png" alt="" class="img-fluid sticker-1 hidden-p-mobile">
+                <!-- HEADING & SUBTITLE-->
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="script git-title">Get in touch with me</h2>
+                        <img src="img/icon-git.png" alt="" class="icon-git">
+                        <p>Feel free to leave me a message via the form, or you can get a hold of me at <b>anonpham311@gmail.com</b></p>
+                    </div>
+                </div>
+                <!-- FORM CONTACT -->
+                <form action="https://formspree.io/f/mayapope" method="POST" class="row g-3">
+                    <!-- NAME -->
+                    <div class="col-12" data-aos="fade-up">
+                        <label for="name" class="form-label">Hey, I’m Thao Pham. What’s your name? *</label>
+                        <input name="name" id="name" type="text" class="form-control form-control-lg" required>
+                    </div>
+                    <!-- EMAIL -->
+                    <div class="col-12" data-aos="fade-up">
+                        <label for="email" class="form-label">Email, please! *</label>
+                        <input name="email" id="email" type="email" class="form-control form-control-lg" required>
+                    </div>
+                    <!-- HEAR ABOUT ME -->
+                    <div class="col-md-6" data-aos="fade-up">
+                        <label for="hear" class="form-label">How did you hear about me?</label>
+                        <select name="hear" id="hear" class="form-select form-select-lg">
+                            <option selected>Select an option</option>
+                            <option>Facebook</option>
+                            <option>Github</option>
+                            <option>LinkedIn</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <!-- SUBJECT -->
+                    <div class="col-12" data-aos="fade-up">
+                        <label for="subject" class="form-label">What's this regarding? *</label>
+                        <input name="subject" id="subject" type="text" class="form-control form-control-lg" required>
+                    </div>
+                    <!-- QUESTION -->
+                    <div class="col-12" data-aos="fade-up">
+                        <label for="question" class="form-label">Any questions right off the bat? *</label>
+                        <textarea name="question" id="question" class="form-control form-control-lg" rows="5" required></textarea>
+                    </div>
+                    <!-- SUBMIT BUTTON -->
+                    <div class="col-12 pointer" data-aos="zoom-in-right">
+                        <button type="submit" class="btn btn-contact shadow-none">Submit</button>
+                    </div>
+                </form>
+                <!-- STICKER 2 -->
+                <img src="img/sticker-2.png" alt="" class="img-fluid sticker-2 hidden-p-mobile">
+            </div>
+        </div>
+    </div>
+
+    <!-- WHITE FOOTER -->
+    <div class="w-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center justify-content-center">
+              <p class="text-w-footer">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+              <p class="text-w-footer">See all my attribution <a href="attribution.html">here</a></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Set navbar transparent -->
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-white', 'shadow');
+        } else {
+          nav.classList.remove('bg-white', 'shadow');
+        }
+      });
+    </script>
+
+    <!-- ANIMATION ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- WOW JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+
+    <!-- PRE-LOADER -->
+    <script src="js/pre-loader.js"></script>
+    
+  </body>
+</html>

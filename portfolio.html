@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Thao Pham's Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to my little corner of the internet! I'm Thao Pham - a ambitious college student, a self-taught graphic designer and a wannabe full-stack marketer.">
+    <meta name="author" content="Thao Pham">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="Thao Pham's Portfolio" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="Portfolio - Thao Pham's Portfolio"/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Welcome to my little corner of the internet! I'm Thao Pham - a ambitious college student, a self-taught graphic designer and a wannabe full-stack marketer." /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- FANCYBOX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+
+    <!-- ANIMATION ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ANIMATE CSS - WOW JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="img/favicon.png">
+
+    <style>
+      body
+      {
+        background-color: #FFD4C9;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- PRE-LOADER -->
+    <div id="pre-loader">
+      <img src="img/loader-bean-eater.gif" alt="Loading..." />
+    </div>
+
+    <!-- WHITE NAVBAR  -->
+    <div class="w-nav">
+      <nav class="navbar navbar-expand-lg navbar-light w-100" id="w-nav">
+        <div class="container">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo-light.png" alt="" width="60" height="60">
+          </a>
+          <!-- TOGGLER BUTTON -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <!-- NAVBAR -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="coming-soon.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- SOCIAL ICONS -->
+            <div class="d-flex">
+              <ul class="social-icons">
+                <a href="https://www.facebook.com/anonpham311/" target="_blank"><li class="social-icon"><i class="fa fa-facebook"></i></li></a>
+                <a href="https://github.com/anonpham311" target="_blank"><li class="social-icon"><i class="fa fa-github"></i></li></a>
+                <a href="https://www.linkedin.com/in/thao-pham-67611220a/" target="_blank"><li class="social-icon"><i class="fa fa-linkedin"></i></li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- LET'S TALK ABOUT WORK -->
+    <div class="about-work">
+        <div class="container">
+          <div class="row animated wow bounceInDown">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+              <p class="script text-about-work">Let’s talk about</p>
+            </div>
+          </div>
+          <div class="row animated wow bounceInDown">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center img-about-work">
+              <img src="img/png-about-work.png" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- 2D DESIGN -->
+    <div id="design" class="design">
+      <div class="container">
+        <!-- HEADING -->
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/icon-act.png" alt="" class="icon-portfolio">
+            <h3>2D Design</h3>
+          </div>
+        </div>
+        <!-- FILTER -->
+        <div class="button-group filters-button-group">
+          <button class="button is-checked" data-filter="*">All</button>
+          <button class="button" data-filter=".logo">Logo</button>
+          <button class="button" data-filter=".fb-post">Facebook post</button>
+          <button class="button" data-filter=".banner">Banner</button>
+          <button class="button" data-filter=".template">Template</button>
+          <button class="button" data-filter=".brochure">Brochure</button>
+          <button class="button" data-filter=".others">Others</button>
+        </div>
+        <!-- IMAGES -->
+        <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+            <!-- LOGO VOCF -->
+            <article class="logo">
+                <a
+                    data-caption="Vietnam Online Career Fair (VOCF) 6 Logo"
+                    data-fancybox="gallery"
+                    href="img/2d-design/logo-vocf.jpg"
+                >
+                    <img data-src="img/2d-design/logo-vocf.jpg" src="img/2d-design/logo-vocf.jpg" class="img-responsive lazyload blur-up" />
+                </a>
+            </article>
+            <!-- LOGO HOA HOC 1-1 -->
+            <article class="logo">
+                <a
+                    data-caption="Nguyen Hien Highschool Chemistry Club Logo option 1-1"
+                    data-fancybox="gallery"
+                    href="img/2d-design/logo-hoa-hoc-1-1.jpg"
+                >
+                    <img data-src="img/2d-design/logo-hoa-hoc-1-1.jpg" src="img/2d-design/logo-hoa-hoc-1-1.jpg" class="img-responsive lazyload blur-up" />
+                </a>
+            </article>
+            <!-- LOGO HOA HOC 1-2 -->
+            <article class="logo">
+              <a
+                data-caption="Nguyen Hien Highschool Chemistry Club Logo option 1-2"
+                data-fancybox="gallery"
+                href="img/2d-design/logo-hoa-hoc-1-2.jpg"
+              >
+                <img data-src="img/2d-design/logo-hoa-hoc-1-2.jpg" src="img/2d-design/logo-hoa-hoc-1-2.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- LOGO HOA HOC 1-3 -->
+            <article class="logo">
+              <a
+                data-caption="Nguyen Hien Highschool Chemistry Club Logo option 1-3"
+                data-fancybox="gallery"
+                href="img/2d-design/logo-hoa-hoc-1-3.jpg"
+              >
+                <img data-src="img/2d-design/logo-hoa-hoc-1-3.jpg" src="img/2d-design/logo-hoa-hoc-1-3.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- LOGO HOA HOC 2 -->
+            <article class="logo">
+              <a
+                data-caption="Nguyen Hien Highschool Chemistry Club Logo option 2"
+                data-fancybox="gallery"
+                href="img/2d-design/logo-hoa-hoc-2.jpg"
+              >
+                <img data-src="img/2d-design/logo-hoa-hoc-2.jpg" src="img/2d-design/logo-hoa-hoc-2.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- LOGO HOA HOC 3 -->
+            <article class="logo">
+              <a
+                data-caption="Nguyen Hien Highschool Chemistry Club Logo option 3"
+                data-fancybox="gallery"
+                href="img/2d-design/logo-hoa-hoc-3.jpg"
+              >
+                <img data-src="img/2d-design/logo-hoa-hoc-3.jpg" src="img/2d-design/logo-hoa-hoc-3.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - PINPOST -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 Launch Fair Pinpost"
+                data-fancybox="gallery"
+                href="img/2d-design/launch-fair-pinpost.png"
+              >
+                <img data-src="img/2d-design/launch-fair-pinpost.png" src="img/2d-design/launch-fair-pinpost.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - KPBT 1 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - Webinar: Khám phá bản thân - Nắm bắt tương lai"
+                data-fancybox="gallery"
+                href="img/2d-design/kpbt-1.png"
+              >
+                <img data-src="img/2d-design/kpbt-1.png" src="img/2d-design/kpbt-1.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - KPBT 2 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - Webinar: Khám phá bản thân - Nắm bắt tương lai"
+                data-fancybox="gallery"
+                href="img/2d-design/kpbt-2.png"
+              >
+                <img data-src="img/2d-design/kpbt-2.png" src="img/2d-design/kpbt-2.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - KPBT 3 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - Webinar: Khám phá bản thân - Nắm bắt tương lai"
+                data-fancybox="gallery"
+                href="img/2d-design/kpbt-3.png"
+              >
+                <img data-src="img/2d-design/kpbt-3.png" src="img/2d-design/kpbt-3.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - HNHN 1 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - Webinar: Hiểu ngành - hiểu nghề"
+                data-fancybox="gallery"
+                href="img/2d-design/hnhn-1.png"
+              >
+                <img data-src="img/2d-design/hnhn-1.png" src="img/2d-design/hnhn-1.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - HNHN 2 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - Webinar: Hiểu ngành - hiểu nghề"
+                data-fancybox="gallery"
+                href="img/2d-design/hnhn-2.png"
+              >
+                <img data-src="img/2d-design/hnhn-2.png" src="img/2d-design/hnhn-2.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - IN FAIR 1 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - Main fair: The V-Universities Open Week"
+                data-fancybox="gallery"
+                href="img/2d-design/in-fair-1.png"
+              >
+                <img data-src="img/2d-design/in-fair-1.png" src="img/2d-design/in-fair-1.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - IN FAIR 2 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - Main fair: The V-Universities Open Week"
+                data-fancybox="gallery"
+                href="img/2d-design/in-fair-2.png"
+              >
+                <img data-src="img/2d-design/in-fair-2.png" src="img/2d-design/in-fair-2.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - IN FAIR 3 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - Main fair: The V-Universities Open Week"
+                data-fancybox="gallery"
+                href="img/2d-design/in-fair-3.png"
+              >
+                <img data-src="img/2d-design/in-fair-3.png" src="img/2d-design/in-fair-3.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - KOLS 1 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - KOLs Introduction"
+                data-fancybox="gallery"
+                href="img/2d-design/kols-1.png"
+              >
+                <img data-src="img/2d-design/kols-1.png" src="img/2d-design/kols-1.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - KOLS 2 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - KOLs Introduction"
+                data-fancybox="gallery"
+                href="img/2d-design/kols-2.png"
+              >
+                <img data-src="img/2d-design/kols-2.png" src="img/2d-design/kols-2.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - 2K3 -->
+            <article class="fb-post">
+              <a
+                data-caption="VOCF 6 - Webinar: 2k3 nên tìm kiếm điều gì ở một trường đại học?"
+                data-fancybox="gallery"
+                href="img/2d-design/webinar-2k3.png"
+              >
+                <img data-src="img/2d-design/webinar-2k3.png" src="img/2d-design/webinar-2k3.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - CV -->
+            <article class="fb-post">
+              <a
+                data-caption="Career Fair 2021 (HCMUTE) - Workshop: Đánh bóng CV cùng TopCV"
+                data-fancybox="gallery"
+                href="img/2d-design/cv.png"
+              >
+                <img data-src="img/2d-design/cv.png" src="img/2d-design/cv.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - CHON BAN 1 -->
+            <article class="fb-post">
+              <a
+                data-caption="Humans of Nguyen Hien - Chọn ban nào? Tự nhiên hay Xã hội?"
+                data-fancybox="gallery"
+                href="img/2d-design/chon-ban-1.jpg"
+              >
+                <img data-src="img/2d-design/chon-ban-1.jpg" src="img/2d-design/chon-ban-1.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - CHON BAN 2 -->
+            <article class="fb-post">
+              <a
+                data-caption="Humans of Nguyen Hien - Chọn ban nào? Tự nhiên hay Xã hội?"
+                data-fancybox="gallery"
+                href="img/2d-design/chon-ban-2.jpg"
+              >
+                <img data-src="img/2d-design/chon-ban-2.jpg" src="img/2d-design/chon-ban-2.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - CHON BAN 3 -->
+            <article class="fb-post">
+              <a
+                data-caption="Humans of Nguyen Hien - Chọn ban nào? Tự nhiên hay Xã hội?"
+                data-fancybox="gallery"
+                href="img/2d-design/chon-ban-3.jpg"
+              >
+                <img data-src="img/2d-design/chon-ban-3.jpg" src="img/2d-design/chon-ban-3.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - MUA DICH 1 -->
+            <article class="fb-post">
+              <a
+                data-caption="Humans of Nguyen Hien - Làm gì khi ở nhà mùa dịch"
+                data-fancybox="gallery"
+                href="img/2d-design/mua-dich-1.jpg"
+              >
+                <img data-src="img/2d-design/mua-dich-1.jpg" src="img/2d-design/mua-dich-1.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - MUA DICH 2 -->
+            <article class="fb-post">
+              <a
+                data-caption="Humans of Nguyen Hien - Làm gì khi ở nhà mùa dịch"
+                data-fancybox="gallery"
+                href="img/2d-design/mua-dich-2.jpg"
+              >
+                <img data-src="img/2d-design/mua-dich-2.jpg" src="img/2d-design/mua-dich-2.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - MUA DICH 3 -->
+            <article class="fb-post">
+              <a
+                data-caption="Humans of Nguyen Hien - Làm gì khi ở nhà mùa dịch"
+                data-fancybox="gallery"
+                href="img/2d-design/mua-dich-3.jpg"
+              >
+                <img data-src="img/2d-design/mua-dich-3.jpg" src="img/2d-design/mua-dich-3.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- FB POST - MUA DICH 4 -->
+            <article class="fb-post">
+              <a
+                data-caption="Humans of Nguyen Hien - Làm gì khi ở nhà mùa dịch"
+                data-fancybox="gallery"
+                href="img/2d-design/mua-dich-4.jpg"
+              >
+                <img data-src="img/2d-design/mua-dich-4.jpg" src="img/2d-design/mua-dich-4.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- BANNER - FB BANNER -->
+            <article class="banner">
+              <a
+                data-caption="Facebook banner for Enterprise Relations Office (ERO) - HCMUTE"
+                data-fancybox="gallery"
+                href="img/2d-design/facebook-cover.png"
+              >
+                <img data-src="img/2d-design/facebook-cover.png" src="img/2d-design/facebook-cover.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- BANNER - YT BANNER -->
+            <article class="banner">
+              <a
+                data-caption="Youtube banner for Enterprise Relations Office (ERO) - HCMUTE"
+                data-fancybox="gallery"
+                href="img/2d-design/youtube-banner.png"
+              >
+                <img data-src="img/2d-design/youtube-banner.png" src="img/2d-design/youtube-banner.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- BANNER - WEB BANNER -->
+            <article class="banner">
+              <a
+                data-caption="Web banner for Schoolada - Online stationery shop"
+                data-fancybox="gallery"
+                href="img/2d-design/web-banner.jpg"
+              >
+                <img data-src="img/2d-design/web-banner.jpg" src="img/2d-design/web-banner.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- WATCH TEMPLATE 1 -->
+            <article class="template">
+              <a
+                data-caption="I created a watch template to use for any Women’s watches on thegioididong.com and dienmayxanh.com"
+                data-fancybox="gallery"
+                href="img/2d-design/watch-template-1.png"
+              >
+                <img data-src="img/2d-design/watch-template-1.png" src="img/2d-design/watch-template-1.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- WATCH TEMPLATE 2 -->
+            <article class="template">
+              <a
+                data-caption="I created a watch template to use for any Women’s watches on thegioididong.com and dienmayxanh.com"
+                data-fancybox="gallery"
+                href="img/2d-design/watch-template-2.png"
+              >
+                <img data-src="img/2d-design/watch-template-2.png" src="img/2d-design/watch-template-2.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- WATCH TEMPLATE 3 -->
+            <article class="template">
+              <a
+                data-caption="I created a watch template to use for any Women’s watches on thegioididong.com and dienmayxanh.com"
+                data-fancybox="gallery"
+                href="img/2d-design/watch-template-3.png"
+              >
+                <img data-src="img/2d-design/watch-template-3.png" src="img/2d-design/watch-template-3.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- WATCH TEMPLATE 4 -->
+            <article class="template">
+              <a
+                data-caption="I created a watch template to use for any Women’s watches on thegioididong.com and dienmayxanh.com"
+                data-fancybox="gallery"
+                href="img/2d-design/watch-template-4.png"
+              >
+                <img data-src="img/2d-design/watch-template-4.png" src="img/2d-design/watch-template-4.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- WATCH TEMPLATE 5 -->
+            <article class="template">
+              <a
+                data-caption="I created a watch template to use for any Women’s watches on thegioididong.com and dienmayxanh.com"
+                data-fancybox="gallery"
+                href="img/2d-design/watch-template-5.png"
+              >
+                <img data-src="img/2d-design/watch-template-5.png" src="img/2d-design/watch-template-5.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- WATCH TEMPLATE 6 -->
+            <article class="template">
+              <a
+                data-caption="I created a watch template to use for any Women’s watches on thegioididong.com and dienmayxanh.com"
+                data-fancybox="gallery"
+                href="img/2d-design/watch-template-6.png"
+              >
+                <img data-src="img/2d-design/watch-template-6.png" src="img/2d-design/watch-template-6.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- WATCH TEMPLATE 7 -->
+            <article class="template">
+              <a
+                data-caption="I created a watch template to use for any Women’s watches on thegioididong.com and dienmayxanh.com"
+                data-fancybox="gallery"
+                href="img/2d-design/watch-template-7.png"
+              >
+                <img data-src="img/2d-design/watch-template-7.png" src="img/2d-design/watch-template-7.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- BROCHURE 1 -->
+            <article class="brochure">
+              <a
+                data-caption="Bifold Watch Brochure - This is my entrance test when I applied for Content Marketing Collaborator position in Mobile World Investment Corporation (MWG)"
+                data-fancybox="gallery"
+                href="img/2d-design/bifold-brochure-1.jpg"
+              >
+                <img data-src="img/2d-design/bifold-brochure-1.jpg" src="img/2d-design/bifold-brochure-1.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- BROCHURE 2 -->
+            <article class="brochure">
+              <a
+                data-caption="Bifold Watch Brochure - This is my entrance test when I applied for Content Marketing Collaborator position in Mobile World Investment Corporation (MWG)"
+                data-fancybox="gallery"
+                href="img/2d-design/bifold-brochure-2.jpg"
+              >
+                <img data-src="img/2d-design/bifold-brochure-2.jpg" src="img/2d-design/bifold-brochure-2.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- BROCHURE 3 -->
+            <article class="brochure">
+              <a
+                data-caption="Bifold Watch Brochure - This is my entrance test when I applied for Content Marketing Collaborator position in Mobile World Investment Corporation (MWG)"
+                data-fancybox="gallery"
+                href="img/2d-design/bifold-brochure-3.jpg"
+              >
+                <img data-src="img/2d-design/bifold-brochure-3.jpg" src="img/2d-design/bifold-brochure-3.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- BROCHURE MOCKUP 1 -->
+            <article class="brochure">
+              <a
+                data-caption="Bifold Watch Brochure - This is my entrance test when I applied for Content Marketing Collaborator position in Mobile World Investment Corporation (MWG)"
+                data-fancybox="gallery"
+                href="img/2d-design/bifold-brochure-mockup-1.jpg"
+              >
+                <img data-src="img/2d-design/bifold-brochure-mockup-1.jpg" src="img/2d-design/bifold-brochure-mockup-1.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- BROCHURE MOCKUP 2 -->
+            <article class="brochure">
+              <a
+                data-caption="Bifold Watch Brochure - This is my entrance test when I applied for Content Marketing Collaborator position in Mobile World Investment Corporation (MWG)"
+                data-fancybox="gallery"
+                href="img/2d-design/bifold-brochure-mockup-2.jpg"
+              >
+                <img data-src="img/2d-design/bifold-brochure-mockup-2.jpg" src="img/2d-design/bifold-brochure-mockup-2.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- BROCHURE MOCKUP 3 -->
+            <article class="brochure">
+              <a
+                data-caption="Bifold Watch Brochure - This is my entrance test when I applied for Content Marketing Collaborator position in Mobile World Investment Corporation (MWG)"
+                data-fancybox="gallery"
+                href="img/2d-design/bifold-brochure-mockup-3.jpg"
+              >
+                <img data-src="img/2d-design/bifold-brochure-mockup-3.jpg" src="img/2d-design/bifold-brochure-mockup-3.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- OTHERS - AVATAR -->
+            <article class="others">
+              <a
+                data-caption="VOCF 6 - Avatar"
+                data-fancybox="gallery"
+                href="img/2d-design/launch-fair-avatar.png"
+              >
+                <img data-src="img/2d-design/launch-fair-avatar.png" src="img/2d-design/launch-fair-avatar.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- OTHERS - ORGANIZATIONAL CHART -->
+            <article class="others">
+              <a
+                data-caption="Organizational Chart for Enterprise Relations Office (ERO) - HCMUTE"
+                data-fancybox="gallery"
+                href="img/2d-design/organizational-chart.jpg"
+              >
+                <img data-src="img/2d-design/organizational-chart.jpg" src="img/2d-design/organizational-chart.jpg" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+            <!-- OTHERS - STICKER -->
+            <article class="others">
+              <a
+                data-caption="Open Day Sticker for Enterprise Relations Office (ERO) - HCMUTE"
+                data-fancybox="gallery"
+                href="img/2d-design/sticker.png"
+              >
+                <img data-src="img/2d-design/sticker.png" src="img/2d-design/sticker.png" class="img-responsive lazyload blur-up" />
+              </a>
+            </article>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- LINE PHAN CACH -->
+    <div class="bg-line">
+      <div class="container">
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <!-- WEB PROTOTYPES -->
+    <div class="prototype">
+      <div class="container">
+        <!-- HEADING -->
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/icon-act.png" alt="" class="icon-portfolio">
+            <h3>Web Prototyes</h3>
+          </div>
+        </div>
+        <!-- E-LEARNING -->
+        <div class="row">
+          <!-- TEXT -->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="prototype-white">
+              <h4>E-Learning</h4>
+              <p>An E-Learning website prototype that I built with Figma during my time studying UI/UX</p>
+              <a href="https://www.figma.com/proto/qSrSRIjqszdJ0zMEDAuVai/E-Learning?node-id=0%3A3&scaling=scale-down-width" target="_blank">View prototype</a>
+            </div>
+          </div>
+          <!-- IMAGE -->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img data-src="img/prototype/e-learning.jpg" src="img/prototype/e-learning.jpg" alt="" class="w-100 img-prototype lazyload blur-up">
+          </div>
+        </div>
+        <!-- OCBEE -->
+        <div class="row">
+          <!-- IMAGE -->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img data-src="img/prototype/ocbee.jpg" src="img/prototype/ocbee.jpg" alt="" class="w-100 img-prototype lazyload blur-up">
+          </div>
+          <!-- TEXT -->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="prototype-white">
+              <h4>Ocbee</h4>
+              <p>An E-Commerce website prototype that I built with Figma during my time studying UI/UX</p>
+              <a href="https://www.figma.com/proto/HBncDpgHyvcMicBgN3jzw5/OCBEE?node-id=1%3A22&scaling=scale-down-width" target="_blank">View prototype</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LINE PHAN CACH -->
+    <div class="bg-line">
+      <div class="container">
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <!-- WEBSITES -->
+    <div id="website" class="website">
+      <div class="container">
+        <!-- HEADING -->
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/icon-act.png" alt="" class="icon-portfolio">
+            <h3>Websites</h3>
+          </div>
+        </div>
+        <!-- WEBSITE SLIDER -->
+        <div class="carousel slide" id="website-slide" data-bs-ride="carousel">
+          <!-- INDICATORS -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#website-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" class="thumb-1"></button>
+            <button type="button" data-bs-target="#website-slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#website-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#website-slide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- CYBERPUNK 2077 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <!-- IMAGE -->
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <img src="img/website/cyberpunk.png" alt="" class="w-100">
+                </div>
+                <!-- TEXT -->
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <h4>Cyberpunk 2077</h4>
+                  <p>Cyberpunk 2077 - my first website ever that was built with pure HTML & CSS. It's a simple game portal website I coded in August 2020 before the Cyberpunk 2077 release date when I was studying HTML & CSS course at dpiCenter.</p>
+                  <p><span class="tags">HTML/CSS</span></p>
+                  <a href="https://anonpham311.000webhostapp.com/" target="_blank"><button class="btn btn-website" type="button">View website</button></a>
+                </div>
+              </div>
+            </div>
+            <!-- MVE -->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- IMAGE -->
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <img src="img/website/mve.png" alt="" class="w-100">
+                </div>
+                <!-- TEXT -->
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <h4>Make Vietnamese Easier</h4>
+                  <p>Make Vietnam Easier or MVE for short is a remake website based on another Vietnamese learning website that I created on Squarespace for my group project in college. The remake was built with Bootstrap 4.7 and only used for my final project at dpiCenter with the new logo, branding colors and features.</p>
+                  <p><span class="tags">HTML/CSS</span><span class="tags">Bootstrap</span></p>
+                  <a href="https://anonpham311.github.io/mve/"  target="_blank"><button class="btn btn-website" type="button">View website</button></a>
+                </div>
+              </div>
+            </div>
+            <!-- VISHOES -->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- IMAGE -->
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <img src="img/website/vishoes.png" alt="" class="w-100">
+                </div>
+                <!-- TEXT -->
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <h4>ViShoes</h4>
+                  <p>Vishoes is a school project I made with the support of my friend - Huynh Thi Tam. We used <a href="https://www.templateshub.net/template/belle-multipurpose-bootstrap-html-template" target="_blank" style="color: #C57D29; text-decoration: underline;">Belle - Multipurpose Bootstrap 4 HTML Template</a> and customize it to be a shoes store website. All the information and images in this website are just for the demo and don't represent for any existing brands.</p>
+                  <p><span class="tags">HTML/CSS</span><span class="tags">Bootstrap</span></p>
+                  <a href="https://anonpham311.github.io/vishoes/" target="_blank"><button class="btn btn-website" type="button">View website</button></a>
+                </div>
+              </div>
+            </div>
+            <!-- SCHOOLADA -->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- IMAGE -->
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <img src="img/website/schoolada.png" alt="" class="w-100">
+                </div>
+                <!-- TEXT -->
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <h4>Schoolada</h4>
+                  <p>Schoolada is a stationery online shop on Wix platform that I design for my Ecommerce group project in college.</p>
+                  <p><span class="tags">WIX</span></p>
+                  <a href="https://schoolada.wixsite.com/home" target="_blank"><button class="btn btn-website" type="button">View website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LINE PHAN CACH -->
+    <div class="bg-line" style="padding-top: 3rem;">
+      <div class="container">
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="container">
+        <!-- HEADING -->
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/icon-act.png" alt="" class="icon-portfolio">
+            <h3>Content</h3>
+          </div>
+        </div>
+        <!-- IELTS TITLE -->
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/bullet-act.png" alt="" class="star-content">
+            <p class="subtitle-content">IELTS center review and IELTS sharing on <i>ieltscaptoc.com.vn</i></p>
+          </div>
+        </div>
+        <!-- IELTS 1 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://ieltscaptoc.com.vn/khoa-hoc-ielts-1-kem-1-tai-quan-10-tp-hcm/" target="_blank">
+              <img data-src="img/content/ielts-1.png" src="img/content/ielts-1.png" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Khóa học IELTS 1 kèm 1 tại Quận 10 TP.HCM</h5>
+            <p class="description">IELTS 1 kèm 1 là chương trình đào tạo IELTS cực kì chất lượng được thiết kế chuyên biệt để giúp học viên đạt được điểm số IELTS đầu ra như mong muốn trong thời gian sớm nhất. Vì thế, không ít người đã lựa chọn IELTS 1 kèm 1 bởi những lợi ích vượt trội mà nó mang lại.</p>
+            <a href="https://ieltscaptoc.com.vn/khoa-hoc-ielts-1-kem-1-tai-quan-10-tp-hcm/" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- IELTS 2 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://ieltscaptoc.com.vn/top-4-trung-tam-luyen-thi-ielts-general-uy-tin-chat-luong-tai-tphcm/" target="_blank">
+              <img data-src="img/content/ielts-2.png" src="img/content/ielts-2.png" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Top 4 Trung tâm luyện thi IELTS General uy tín, chất lượng tại TP.HCM</h5>
+            <p class="description">IELTS General là gì? Luyện thi IELTS General ở đâu đảm bảo uy tín, chất lượng? Để trả lời cho những câu hỏi trên, mời bạn theo dõi bài viết Top 4 Trung tâm luyện thi IELTS General uy tín, chất lượng tại TP.HCM của ieltscaptoc.com.vn nhé.</p>
+            <a href="https://ieltscaptoc.com.vn/top-4-trung-tam-luyen-thi-ielts-general-uy-tin-chat-luong-tai-tphcm/" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- IELTS 3 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://ieltscaptoc.com.vn/chia-se-kinh-nghiem-hoc-ielts-general/" target="_blank">
+              <img data-src="img/content/ielts-3.jpg" src="img/content/ielts-3.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Bí quyết kinh nghiệm học IELTS General – Chia sẻ</h5>
+            <p class="description">Nếu bạn có dự định học IELTS General thì đừng bỏ qua bài viết dưới đây nhé. Bài viết không chỉ cung cấp cho bạn những thông tin hữu ích về IELTS Tổng quát mà còn giúp bạn bỏ túi những bí quyết ôn thi để đạt hiệu quả cao nhất.</p>
+            <a href="https://ieltscaptoc.com.vn/chia-se-kinh-nghiem-hoc-ielts-general/" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- IELTS 4 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://ieltscaptoc.com.vn/so-sanh-ielts-academic-va-general/" target="_blank">
+              <img data-src="img/content/ielts-4.png" src="img/content/ielts-4.png" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">So sánh IELTS General & Academic – Vậy nên thi IELTS nào?</h5>
+            <p class="description">Có bao giờ bạn tự hỏi IELTS General và IELTS Academic giống và khác nhau như thế nào? Hình thức nào là phù hợp cho bạn? Hãy cùng ieltscaptoc.com.vn tìm hiểu ở bài viết so sánh IELTS General và Academic dưới đây nhé.</p>
+            <a href="https://ieltscaptoc.com.vn/so-sanh-ielts-academic-va-general/" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- IELTS 5 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://ieltscaptoc.com.vn/lo-trinh-hoc-ielts-tai-trung-tam-ielts-vietop-tp-hcm/" target="_blank">
+              <img data-src="img/content/ielts-5.jpg" src="img/content/ielts-5.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Lộ trình học IELTS tại trung tâm IELTS Vietop TP.HCM</h5>
+            <p class="description">Trung tâm IELTS Vietop có chất lượng và đáng tin hay không? Lộ trình học ở IELTS Vietop như thế nào? Liệu các khóa học của IELTS Vietop có đáp ứng nhu cầu và mục tiêu của tôi hay không?</p>
+            <a href="https://ieltscaptoc.com.vn/lo-trinh-hoc-ielts-tai-trung-tam-ielts-vietop-tp-hcm/" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- SMARTWATCH TITLE -->
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/bullet-act.png" alt="" class="star-content">
+            <p class="subtitle-content">Smartwatch review on <i>dienmayxanh.com</i></p>
+          </div>
+        </div>
+        <!-- SMARTWATCH 1 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://www.dienmayxanh.com/dong-ho-thong-minh/enduro-day-vai" target="_blank">
+              <img data-src="img/content/smartwatch-1.jpg" src="img/content/smartwatch-1.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Đồng hồ thông minh Garmin Enduro dây vải</h5>
+            <p class="description">Đồng hồ thông minh Garmin Enduro tự tin sẽ là một trợ thủ đắc lực luôn bên bạn trên mọi nẻo đường với kích thước 1.4 inch cùng độ phân giải 280 x 280 pixels cho khả năng hiển thị tối ưu ngay cả khi đang di chuyển. Khung viền đồng hồ làm từ thép không gỉ kết hợp cùng dây đeo bằng vải dù siêu nhẹ và mặt kính cường lực cho độ bền cao cùng khả năng chống chịu dưới nhiều điều kiện thời tiết.</p>
+            <a href="https://www.dienmayxanh.com/dong-ho-thong-minh/enduro-day-vai" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- SMARTWATCH 2 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://www.dienmayxanh.com/dong-ho-thong-minh/s6-lte-40mm-vien-thep-day-cao-su-xanh-duong" target="_blank">
+              <img data-src="img/content/smartwatch-2.jpg" src="img/content/smartwatch-2.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Apple Watch S6 LTE 40mm viền thép dây cao su xanh dương</h5>
+            <p class="description max-lines">Apple Watch S6 LTE 40mm sở hữu ngôn ngữ thiết kế hiện đại, sang trọng từ lâu đã làm nên thương hiệu của nhà Táo. Màn hình 1.57 inch cho khả năng hiển thị rõ ràng, dễ dàng theo dõi thông báo hiển thị trên đồng hồ. Mặt kính cường lực Saphire có độ trong suốt cao, chống trầy xước tốt cùng khung viền từ thép không gỉ bảo vệ đồng hồ dưới nhiều loại thời tiết khác nhau và dây đeo bằng silicone mềm mịn.</p>
+            <a href="https://www.dienmayxanh.com/dong-ho-thong-minh/s6-lte-40mm-vien-thep-day-cao-su-xanh-duong" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- SMARTWATCH 3 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://www.dienmayxanh.com/dong-ho-thong-minh/dong-ho-thong-minh-garmin-forerunner-55-day-silicone-trang" target="_blank">
+              <img data-src="img/content/smartwatch-3.jpg" src="img/content/smartwatch-3.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Đồng hồ thông minh Garmin Forerunner 55 dây silicone trắng</h5>
+            <p class="description max-lines">Đồng hồ thông minh Garmin Forerunner 55 có ngôn ngữ thiết kế hiện đại, đường nét cắt gọt tinh tế mang đến cho đồng hồ vẻ ngoài cứng cáp nhưng không kém phần năng động. Forerunner 55 sở hữu đường kính mặt 42 mm cùng dây đeo bằng silicone mềm mại, thân thiện với làn da.</p>
+            <a href="https://www.dienmayxanh.com/dong-ho-thong-minh/dong-ho-thong-minh-garmin-forerunner-55-day-silicone-trang" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- SMARTWATCH 4 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://www.dienmayxanh.com/dong-ho-thong-minh/amazfit-gts-2-mini" target="_blank">
+              <img data-src="img/content/smartwatch-4.jpg" src="img/content/smartwatch-4.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Đồng hồ thông minh Amazfit GTS 2 mini</h5>
+            <p class="description max-lines">Đồng hồ thông minh Amazfit GTS 2 mini với thiết kế có phần nhỏ gọn hơn so với phiên bản tiêu chuẩn GTS 2 nhưng vẫn giữ lại những đường nét bo cong mềm mại, mang đến cho đồng hồ vẻ đẹp tinh tế và hiện đại.</p>
+            <a href="https://www.dienmayxanh.com/dong-ho-thong-minh/amazfit-gts-2-mini" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- BICYCLE TITLE -->
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/bullet-act.png" alt="" class="star-content">
+            <p class="subtitle-content">Bicycle review on <i>dienmayxanh.com</i></p>
+          </div>
+        </div>
+        <!-- BICYCLE 1 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://www.dienmayxanh.com/xe-dap/giant-roam-3-disc-29-inch-xam-m" target="_blank">
+              <img data-src="img/content/bicycle-1.jpg" src="img/content/bicycle-1.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Xe đạp địa hình MTB Giant ROAM 3 DISC 29 inch Xám M</h5>
+            <p class="description max-lines">Không đơn thuần là một chiếc xe đạp thể thao thông thường, đây là mẫu xe “đa di năng” theo bạn trên mọi cung đường từ những buổi chiều mát đạp xe ngắm nhìn thành phố hay dạo quanh công việc tập thể dục cho đến những chuyến đi phượt vào cuối tuần. Giant Roam 3 Disc - 700 C Nhôm Concrete (size M) gây ấn tượng bởi kiểu dáng cứng cáp, mạnh mẽ, đặc biệt phù hợp với các bạn trẻ nhiệt huyết và đam mê khám phá.</p>
+            <a href="https://www.dienmayxanh.com/xe-dap/giant-roam-3-disc-29-inch-xam-m" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- BICYCLE 2 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://www.dienmayxanh.com/xe-dap/vivente-700c-line-27-5-inch-cam" target="_blank">
+              <img data-src="img/content/bicycle-2.jpg" src="img/content/bicycle-2.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Xe đạp thể thao Road Vivente 700C-LINE 27.5 inch Cam</h5>
+            <p class="description max-lines">ViVente 700C-Line được khoác lên mình một lớp “áo” sơn tĩnh điện màu đen tuyền cùng các những mảnh màu canh cá tính điểm xuyết khắp thân xe, cho xe một vẻ ngoài thời thượng và vô cùng bắt mắt.</p>
+            <a href="https://www.dienmayxanh.com/xe-dap/vivente-700c-line-27-5-inch-cam" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- BICYCLE 3 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://www.dienmayxanh.com/xe-dap/vivente-26f3-26-inch-vang" target="_blank">
+              <img data-src="img/content/bicycle-3.jpg" src="img/content/bicycle-3.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Xe đạp địa hình MTB Vivente 26F3 26 inch Vàng</h5>
+            <p class="description max-lines">ViVente 26F3 Thép 26 inch Đen Vàng mang đến sự kết hợp nổi bật giữa tông màu đen huyền bí cùng những mảng màu vàng cá tính giúp xe tạo nên một tổng thể vô cùng ấn tượng và phá cách.</p>
+            <a href="https://www.dienmayxanh.com/xe-dap/vivente-26f3-26-inch-vang" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- BICYCLE 4 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://www.dienmayxanh.com/xe-dap/fornix-racer-24-inch-xanh-la" target="_blank">
+              <img data-src="img/content/bicycle-4.jpg" src="img/content/bicycle-4.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Xe đạp địa hình MTB Fornix Racer 24 inch Xanh lá</h5>
+            <p class="description max-lines">Fornix Racer sườn sắt  24 inch Đen -  Xanh Lá sở hữu phong cách thiết kế hầm hố, mạnh mẽ với toàn bộ thân xe đều được phủ lên lớp sơn tĩnh điện màu đen tuyền kết hợp cùng gam màu xanh neon làm điểm nhấn.</p>
+            <a href="https://www.dienmayxanh.com/xe-dap/fornix-racer-24-inch-xanh-la" target="_blank">Read more</a>
+          </div>
+        </div>
+        <br>
+        <!-- BICYCLE 5 -->
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="https://www.dienmayxanh.com/xe-dap/royalbaby-chipmunk-explore-cm20-3-20-inch-xanh-duong" target="_blank">
+              <img data-src="img/content/bicycle-5.jpg" src="img/content/bicycle-5.jpg" alt="" class="w-100 lazyload blur-up">
+            </a>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h5 class="title-article">Xe đạp trẻ em Chipmunk Explore CM20-3 20 inch Xanh Dương</h5>
+            <p class="description max-lines">RoyalBaby Chipmunk Explore CM20-3 20 inch Xanh Dương có ngôn ngữ thiết kế hoàn hảo với màu sắc là sự pha trộn hoàn hảo giữa hai tông xanh đậm và xanh nhạt mang đến cho xe một ngoại hình thon gọn và thời thượng.</p>
+            <a href="https://www.dienmayxanh.com/xe-dap/royalbaby-chipmunk-explore-cm20-3-20-inch-xanh-duong" target="_blank">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHITE FOOTER -->
+    <div class="w-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center justify-content-center">
+              <p class="text-w-footer">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+              <p class="text-w-footer">See all my attribution <a href="attribution.html">here</a></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Set navbar fixed-top mà ko bị che banner -->
+    <script>
+      $(window).scroll(function(){
+          if($(window).scrollTop()>100)
+          {
+              $('#w-nav').css('position','fixed');
+              $('#w-nav').css('background','#fff');
+              $('#w-nav').css('box-shadow','0 .5rem 1rem rgba(0,0,0,.15)');
+              $('#w-nav').css('z-index','2')
+          }
+          else
+          {
+              $('#w-nav').css('position','initial')
+              $('#w-nav').css('box-shadow','none');
+          }
+      })
+    </script>
+
+    <!-- ISOTOPE -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+
+      $( function() {
+        var $grid = $('.grid').isotope({
+          itemSelector: 'article'
+        });
+
+        // filter buttons
+        $('.filters-button-group').on( 'click', 'button', function() {
+          var filterValue = $( this ).attr('data-filter');
+          $grid.isotope({ filter: filterValue });
+        });
+        $('.button-group').each( function( i, buttonGroup ) {
+          var $buttonGroup = $( buttonGroup );
+          $buttonGroup.on( 'click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $( this ).addClass('is-checked');
+          });
+        });
+      });
+
+      // debounce so filtering doesn't happen every millisecond
+      function debounce( fn, threshold ) {
+        var timeout;
+        return function debounced() {
+          if ( timeout ) {
+            clearTimeout( timeout );
+          }
+          function delayed() {
+            fn();
+            timeout = null;
+          }
+          timeout = setTimeout( delayed, threshold || 100 );
+        }
+      }
+
+      $(window).bind("load", function() {
+        $('#all').click();
+      });
+
+    </script>
+        
+    <!-- FANCYBOX -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script>
+      // Initialise Carousel
+      const myCarousel = new Carousel(document.querySelector("#myCarousel"), {
+        preload: 2,
+      });
+
+      // Customize Fancybox
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        closeButton: "top",
+        Thumbs: false,
+        Carousel: {
+          Dots: true,
+          on: {
+            change: (that) => {
+              myCarousel.slideTo(that.page, { friction: 0 });
+            },
+          },
+        },
+      });    
+    </script>
+
+    <!-- ANIMATION ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- WOW JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+
+    <!-- PRE-LOADER -->
+    <script src="js/pre-loader.js"></script>
+
+    <!-- LAZYSIZES -->
+    <script src="js/lazysizes.js"></script>
+
+  </body>
+</html>

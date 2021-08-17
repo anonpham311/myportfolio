@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Thao Pham's Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to my little corner of the internet! I'm Thao Pham - a ambitious college student, a self-taught graphic designer and a wannabe full-stack marketer.">
+    <meta name="author" content="Thao Pham">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="Thao Pham's Portfolio" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="Blog - Thao Pham's Portfolio"/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Welcome to my little corner of the internet! I'm Thao Pham - a ambitious college student, a self-taught graphic designer and a wannabe full-stack marketer." /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- ANIMATION ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ANIMATE CSS - WOW JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+
+    <!-- PRE-LOADER -->
+    <div id="pre-loader">
+      <img src="img/loader-bean-eater.gif" alt="Loading..." />
+    </div>
+
+    <!-- DARK TRANSPARENT NAVBAR  -->
+    <div id="d-nav" class="d-nav">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo-dark.png" alt="" width="60" height="60">
+          </a>
+          <!-- TOGGLER BUTTON -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <!-- NAVBAR -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="coming-soon.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- SOCIAL ICONS -->
+            <div class="d-flex">
+              <ul class="social-icons">
+                <a href="https://www.facebook.com/anonpham311/" target="_blank"><li class="social-icon"><i class="fa fa-facebook"></i></li></a>
+                <a href="https://github.com/anonpham311" target="_blank"><li class="social-icon"><i class="fa fa-github"></i></li></a>
+                <a href="https://www.linkedin.com/in/thao-pham-67611220a/" target="_blank"><li class="social-icon"><i class="fa fa-linkedin"></i></li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- COMING SOON  -->
+    <div class="coming-soon d-flex align-items-center container-fluid">
+      <div class="container">
+          <div class="row">
+            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 text-center">
+              <img src="img/png-coming-soon.png" alt="" class="img-fluid img-cs">
+            </div>
+            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12 text-center">
+                <p class="cs-text-1">Oops! Look like this site is still</p>
+                <h2>UNDER CONSTRUCTION</h2>
+                <p>I’m currently working really hard to create some interesting content and I can’t wait to show you when it’s done. Let’s count down the launching date!</p>
+                <div id="timer">
+                  <ul>
+                    <li><div id="days"></div></li>
+                    <li><div id="hours"></div></li>
+                    <li><div id="minutes"></div></li>
+                    <li><div id="seconds"></div></li>
+                  </ul>
+                  </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div id="newsletter" class="newsletter">
+      <div class="container">
+        <!-- HEADING & SUBTITLE -->
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" data-aos="fade-up">
+            <h2><span class="white-hightlight">...Or sign up to my newsletter</span></h2>
+            <p>To be notified as soon as this site is lauched</p>
+          </div>
+        </div>
+        <!-- FORM -->
+        <form action="https://formspree.io/f/mnqlgdgq" method="POST" class="row gx-3 gy-3 text-center" data-aos="flip-up">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <input name="your-name" id="your-name" type="text" class="form-control form-control-lg text-input-center" placeholder="Your name" aria-label="Your name">
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <input name="your-email" id="your-email" type="email" class="form-control form-control-lg text-input-center" placeholder="Your email" aria-label="Your email">
+          </div>
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            <button type="submit" class="btn btn-newsletter shadow-none">Subcribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+      <div class="container">
+        <!-- TITLE -->
+        <div class="row">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <h2 data-aos="fade-up"><span class="pink-hightlight">And listen to music</span><span class="pink-hightlight break">while waiting?</span></h2>
+          </div>
+        </div>
+        <!-- CASSETTE -->
+        <div class="cassette-player" data-aos="flip-down">
+  
+          <div class="cassette">
+            <div class="label-container">
+              <div class="trapazoid"></div>    
+              <div class="white">
+                <div class="white-space"></div>
+                <div id="label" class="label"></div>
+                <div class="white-space"></div>
+              </div>
+              <div class="tape-container">
+                <div class="white-space"></div>
+                <div class="wheel-container">
+                  <div class="wheel">
+                    <div class="wheel-overlap">
+                      <div class="inner-circle"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                    </div>
+                    </div>
+                  <div class="wheel wheel-2">
+                    <div class="wheel-overlap">
+                      <div class="inner-circle"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                    </div>              
+                  </div>
+                </div>
+                <div class="white-space"></div>
+              </div>
+              <div class="yellow"></div>
+            </div>
+          </div>
+        
+          <div id="audioPlayer">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                <button title="Previous Track" class="btn" id="previous" onclick="changeTrack(-1)"><i class="fa fa-chevron-left"></i></button>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                <button title="Pause Track" onclick="pauseTrack()" class="btn"><i class="fa fa-pause"></i></button>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                <button title="Play Track" onclick="playTrack()" class="btn"><i class="fa fa-play"></i></button>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                <button title="Next Track" class="btn" id="next" onclick="changeTrack(1)"><i class="fa fa-chevron-right"></i></button>
+              </div> 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- DARK FOOTER -->
+    <div class="d-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center justify-content-center">
+            <p class="text-w-footer">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+            <p class="text-d-footer">See all my attribution <a href="attribution.html">here</a></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Set navbar transparent -->
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>
+    <!-- Countdown -->
+    <script>
+      function makeTimer() {
+    
+      //		var endTime = new Date("31 October 2021 23:59:00 GMT+07:00");	
+        var endTime = new Date("31 October 2021 23:59:00 GMT+07:00");			
+          endTime = (Date.parse(endTime) / 1000);
+    
+          var now = new Date();
+          now = (Date.parse(now) / 1000);
+    
+          var timeLeft = endTime - now;
+    
+          var days = Math.floor(timeLeft / 86400); 
+          var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+          var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+          var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+      
+          if (hours < "10") { hours = "0" + hours; }
+          if (minutes < "10") { minutes = "0" + minutes; }
+          if (seconds < "10") { seconds = "0" + seconds; }
+    
+          $("#days").html(days + "<span>days</span>");
+          $("#hours").html(hours + "<span>hours</span>");
+          $("#minutes").html(minutes + "<span>minutes</span>");
+          $("#seconds").html(seconds + "<span>seconds</span>");		
+    
+      }
+    
+      setInterval(function() { makeTimer(); }, 1000);
+    </script>
+    
+    <!-- ANIMATION ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- WOW JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+
+    <!-- PRE-LOADER -->
+    <script src="js/pre-loader.js"></script>
+
+  </body>
+</html>
